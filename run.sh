@@ -1,2 +1,2 @@
 #/bin/bash
-uvicorn fapi:app --reloads
+uvicorn fapi:app --reload

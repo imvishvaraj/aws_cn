@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request
 
 
 # reading config file
-cfile = open("/Users/vishvaraj/configs/aws_opcito.json", 'r')
+cfile = open("/home/vishvaraj/configs/aws_opcito.json", 'r')
 configs = json.loads(cfile.read())
 
 

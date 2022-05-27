@@ -1,6 +1,7 @@
 import json
 import boto3
 from fastapi import FastAPI, Request
+from fastapi.responses import RedirectResponse
 
 
 # reading config file
@@ -13,7 +14,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return RedirectResponse("/docs")
 
 
 @app.post("/ec2/")

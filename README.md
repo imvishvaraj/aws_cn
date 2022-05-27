@@ -1,25 +1,25 @@
 # aws_cn
 This repository is created to track microservice about aws cloud native applications management.
 
-Before you start running project.
-You need to setup `aws configure` and provide AWS Access Key ID, AWS Secret Access Key.
+### Setup
+ - Clone repo and create virtual environment using `pipenv` or `virtualenv`
+ - Install python packages `pip install -r requirements.txt`
+ - Configure aws command line tool using `aws configure`
+   - for this you need AWS Console Access Key ID and Secrete Access Key
+ - Create config file as mentioned below and provide correct path
+ - Run the server in terminal using `uvicorn fapi:app --reload` or excecute `run.sh`
 
-Then you need to update config file path and it's values as below format.
 
-aws_config.json
+### aws_config.json
 
-`
-{
-  "USERNAME": "myname",
-  "PASSWORD": "pass",
-  "ACCESS_KEY_ID": "12345678",
-  "SECRET_ACCESS_KEY": "12345678",
-  "CONSOLE_LOGIN_LINK": "example.com"
-}
-`
+    {
+      "USERNAME": "myname",
+      "PASSWORD": "pass",
+      "ACCESS_KEY_ID": "12345678",
+      "SECRET_ACCESS_KEY": "12345678",
+      "CONSOLE_LOGIN_LINK": "example.com"
+    }
+
 
 Please insert required value and store it as `file_name.json`
-
-
-To run server you can just execute `run.sh` file.
 

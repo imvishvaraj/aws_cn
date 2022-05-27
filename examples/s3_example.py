@@ -1,9 +1,8 @@
 import os
 import json
-import json_operations
 import boto3
 
-cfile = open("/Users/vishvaraj/configs/aws_opcito.json", 'r')
+cfile = open("/home/vishvaraj/configs/aws_opcito.json", 'r')
 configs = json.loads(cfile.read())
 
 # s3 create bucket

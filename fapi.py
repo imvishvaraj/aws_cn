@@ -5,7 +5,7 @@ from fastapi.responses import RedirectResponse
 
 
 # reading config file
-cfile = open("/home/vishvaraj/configs/aws_opcito.json", 'r')
+cfile = open("aws_opcito.json", 'r')
 configs = json.loads(cfile.read())
 
 
@@ -140,4 +140,3 @@ async def delete_s3_bucket(bucket_name: str):
         context["message"] = "Failed to delete bucket."
         context["error"] = str(e)
         return context
-

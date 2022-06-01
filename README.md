@@ -23,3 +23,8 @@ This repository is created to track microservice about aws cloud native applicat
 
 Please insert required value and store it as `file_name.json`
 
+
+### Docker Commands
+- Build docker image `sudo docker build -t fapi_aws .`
+- To run docker image `sudo docker run -itd -p 8181:8181 <image_id>`
+
